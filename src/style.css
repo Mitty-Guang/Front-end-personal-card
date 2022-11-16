@@ -21,7 +21,7 @@ body {
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px 10px #0000000d;
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .box .profile {
@@ -36,7 +36,7 @@ body {
   height: 120px;
   border-radius: 10px;
   box-shadow: 0 10px 20px 1px rgba(0 0 0 / 0.3);
-  transition: all .5s;
+  transition: all .4s;
 }
 .box .info {
   height: 70px;
@@ -46,7 +46,7 @@ body {
   padding: 0 40px;
   /* background-color: #a1a1f780; */
   overflow: hidden;
-  transition: all .5s;
+  transition: all .2s;
 }
 .box .info h3 {
   color: #333;
