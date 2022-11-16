@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(135deg,#fccf31,#f55555)
+}
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.box {
+  width: 300px;
+  height: 170px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px #0000000d;
+  transition: all .5s;
+}
+
+.box .profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+.box .profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 1px rgba(0 0 0 / 0.3);
+  transition: all .5s;
+}
+.box .info {
+  height: 70px;
+  position: relative;
+  top: -20px;
+  text-align: center;
+  padding: 0 40px;
+  /* background-color: #a1a1f780; */
+  overflow: hidden;
+  transition: all .5s;
+}
+.box .info h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+.box .info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+.info .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.info .user-info > div {
+  position: relative;
+  width: 33.33%;
+}
+.info .user-info > div > .item > div:first-child {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
+.info .user-info > div > .item > div:last-child {
+  color: #999;
+  font-size: 12px;
+}
+
+.left .item {
+  position: absolute;
+  left: 0;
+}
+.right .item {
+  position: absolute;
+  right: 0;
+}
+.info .btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.info .btn > div {
+  width: 45%;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.info .btn .btn-follow {
+  border: 1px solid #79a7e6;
+  color: #79a7e6;
+}
+.info .btn .btn-unfollow {
+  border: 1px solid #79a7e6;
+  background-color: #79a7e6;
+  color: #fff;
+}
+.info .btn .btn-like {
+  border: 1px solid #ff5d47;
+  color: #ff5d47;
+}
+.info .btn .btn-unlike {
+  border: 1px solid #ff5d47;
+  background-color: #ff5d47;
+  color: #fff;
+}
+
+/* hover */
+.box:hover {
+  height: 410px;
+}
+.box:hover .profile img {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+}
+.box:hover .info {
+  height: 200px;
+  margin-top: 10px;
+}
